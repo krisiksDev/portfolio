@@ -1,0 +1,42 @@
+export const experiences = [
+  {
+    type: 'work',
+    date: 'Mai 2025 — Juillet 2025',
+    title: 'Stagiaire en Informatique',
+    company: 'Tribunal Judiciaire de Lille',
+    description: 'Développement de RPA en Python, automatisation de traitement de fichiers. Découverte de nouveaux frameworks : PyQt6, Selenium, Playwright.',
+    tags: ['Python', 'PyQt6', 'Selenium', 'Playwright'],
+  },
+  {
+    type: 'work',
+    date: 'Août 2024 — Octobre 2024',
+    title: 'Façonneur',
+    company: 'Groupe Paragon',
+    description: 'Projets Métiers des Arts graphiques. Aide Opérateur : accompagnement du chef de ligne dans ses opérations.',
+    tags: [],
+  },
+  {
+    type: 'education',
+    date: '2024 — 2027',
+    title: 'Bachelor Informatique',
+    company: 'École Enigma',
+    description: 'Formation en développement informatique, algorithmie et gestion de projets.',
+    tags: [],
+  },
+  {
+    type: 'education',
+    date: '2022 — 2024',
+    title: 'Programme Grande École',
+    company: 'Epitech Lille — Groupe Ionis',
+    description: 'Introduction à la programmation, projets en C et initiation aux méthodes agiles.',
+    tags: ['C', 'Linux'],
+  },
+  {
+    type: 'education',
+    date: '2019 — 2022',
+    title: 'BAC STI2D — SIN',
+    company: 'Lycée Frédérique Ozanam, Lille',
+    description: 'Baccalauréat Sciences et Technologies de l\'Industrie et du Développement Durable, spécialité Systèmes d\'Information et Numérique.',
+    tags: [],
+  },
+]
