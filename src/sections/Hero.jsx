@@ -12,16 +12,8 @@ export default function Hero() {
       {/* Vagues en fond */}
       <svg style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0, pointerEvents: 'none' }} viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
         {waves.map((d, i) => (
-          <path key={i} d={d} fill="none" stroke="#ffffff" strokeWidth="0.4" opacity={0.03 + (i % 5) * 0.015} />
+          <path key={i} d={d} fill="none" stroke="#ffffff" strokeWidth="0.4" opacity={0.08 + (i % 5) * 0.04} />
         ))}
-      </svg>
-
-      {/* Atome React — centré verticalement à droite */}
-      <svg style={{ position: 'absolute', top: '50%', right: '8%', transform: 'translateY(-50%)', width: '420px', height: '420px', zIndex: 0, pointerEvents: 'none', opacity: 0.18 }} viewBox="0 0 600 600">
-        <ellipse cx="300" cy="300" rx="250" ry="90" fill="none" stroke="#ffffff" strokeWidth="1.5" />
-        <ellipse cx="300" cy="300" rx="250" ry="90" fill="none" stroke="#ffffff" strokeWidth="1.5" transform="rotate(60 300 300)" />
-        <ellipse cx="300" cy="300" rx="250" ry="90" fill="none" stroke="#ffffff" strokeWidth="1.5" transform="rotate(120 300 300)" />
-        <circle cx="300" cy="300" r="16" fill="#ffffff" />
       </svg>
 
       <div style={{ position: 'relative', zIndex: 1, maxWidth: '620px' }}>
@@ -44,12 +36,14 @@ export default function Hero() {
             }}>{badge}</span>
           ))}
         </div>
-
+        
         <p style={{ fontSize: '16px', color: '#aaa', lineHeight: '1.8', maxWidth: '500px', fontWeight: '300', fontFamily: 'DM Sans, sans-serif', marginBottom: '2.5rem' }}>
           Je recherche activement une entreprise pour{' '}
           <span style={{ color: '#e0e0e0' }}>apprendre, contribuer</span> et{' '}
-          <span style={{ color: '#e0e0e0' }}>grandir</span> — que ce soit en stage ou en alternance. Rigoureux, adaptable, prêt à m'investir.
-        </p>
+          <span style={{ color: '#e0e0e0' }}>grandir</span> que ce soit en stage ou en alternance.
+          <br /><br />
+          Rigoureux, et motivé je souhaite m'investir pour atteindre les objectifs communs.
+          </p>
 
         <div style={{ display: 'flex', gap: '1rem', marginBottom: '3.5rem' }}>
           <button style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', letterSpacing: '0.06em', padding: '0.85rem 1.75rem', background: '#f5f5f5', color: '#0a0a0a', border: 'none', cursor: 'pointer' }}>
@@ -64,7 +58,7 @@ export default function Hero() {
 
         <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
           {['Python', 'TypeScript', 'JavaScript', 'React', 'GitHub', 'Power BI'].map(skill => (
-            <span key={skill} style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', color: '#888', letterSpacing: '0.08em' }}>{skill}</span>
+            <span key={skill} style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', color: '#ffffff', letterSpacing: '0.08em' }}>{skill}</span>
           ))}
         </div>
 

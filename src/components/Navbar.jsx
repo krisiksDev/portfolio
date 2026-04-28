@@ -13,9 +13,9 @@ export default function Navbar() {
       <div style={{ display: 'flex', gap: '2rem' }}>
         {['À propos', 'Projets', 'Expériences', 'Contact'].map(link => (
           <a key={link} href={`#${link.toLowerCase()}`} style={{
-            fontSize: '13px', color: '#666', textDecoration: 'none', letterSpacing: '0.04em'
+            fontSize: '13px', color: '#e8e8e8', textDecoration: 'none', letterSpacing: '0.08em'
           }}>{link}</a>
-        ))}
+          ))}
       </div>
     </nav>
   )
