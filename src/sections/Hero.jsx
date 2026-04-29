@@ -49,8 +49,11 @@ export default function Hero() {
             <a href="#contact" style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', letterSpacing: '0.06em', padding: '0.85rem 1.75rem', background: '#f5f5f5', color: '#0a0a0a', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
               Me contacter
               </a>
-              <a href="/CV_Gaspard_Grignet_Le_Perron.pdf" download style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', letterSpacing: '0.06em', padding: '0.85rem 1.75rem', background: 'transparent', color: '#aaa', border: '0.5px solid #555', cursor: 'pointer', textDecoration: 'none' }}>
-              Télécharger le CV
+              <a href="/CV_Gaspard_Grignet_Le_Perron.pdf" download
+              style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', letterSpacing: '0.06em', padding: '0.85rem 1.75rem', background: 'transparent', color: '#aaa', border: '0.5px solid #555', cursor: 'pointer', textDecoration: 'none' }}
+              onMouseEnter={e => { e.target.style.color = '#e8e8e8'; e.target.style.borderColor = '#e8e8e8' }}
+              onMouseLeave={e => { e.target.style.color = '#aaa'; e.target.style.borderColor = '#555' }}>
+                Télécharger le CV
               </a>
             </div>
 
