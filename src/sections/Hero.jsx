@@ -44,15 +44,15 @@ export default function Hero() {
           <br /><br />
           Rigoureux, et motivé je souhaite m'investir pour atteindre les objectifs communs.
           </p>
-
-        <div style={{ display: 'flex', gap: '1rem', marginBottom: '3.5rem' }}>
-          <button style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', letterSpacing: '0.06em', padding: '0.85rem 1.75rem', background: '#f5f5f5', color: '#0a0a0a', border: 'none', cursor: 'pointer' }}>
-            Me contacter
-          </button>
-          <button style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', letterSpacing: '0.06em', padding: '0.85rem 1.75rem', background: 'transparent', color: '#aaa', border: '0.5px solid #555', cursor: 'pointer' }}>
-            Télécharger le CV
-          </button>
-        </div>
+          
+          <div style={{ display: 'flex', gap: '1rem', marginBottom: '3.5rem' }}>
+            <a href="#contact" style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', letterSpacing: '0.06em', padding: '0.85rem 1.75rem', background: '#f5f5f5', color: '#0a0a0a', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
+              Me contacter
+              </a>
+              <a href="/CV_Gaspard_Grignet_Le_Perron.pdf" download style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', letterSpacing: '0.06em', padding: '0.85rem 1.75rem', background: 'transparent', color: '#aaa', border: '0.5px solid #555', cursor: 'pointer', textDecoration: 'none' }}>
+              Télécharger le CV
+              </a>
+            </div>
 
         <div style={{ height: '0.5px', background: '#2a2a2a', marginBottom: '1.5rem' }}></div>
 
